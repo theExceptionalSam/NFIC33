@@ -36,7 +36,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────
-CHECKPOINT_PATH = "best_fold0.pth"   
+CHECKPOINT_PATH = "best_fold4.pth"   
 IMG_SIZE        = 288
 DEVICE          = torch.device("cpu")            
 TOP_K           = 5
@@ -236,7 +236,7 @@ def main():
         st.error(
             f"❌ Checkpoint not found at `{CHECKPOINT_PATH}`.\n\n"
             "**Steps to fix:**\n"
-            "1. Download `best_fold0.pth` from your Kaggle notebook output.\n"
+            "1. Download `best_fold4.pth` from your Kaggle notebook output.\n"
             "2. Place it in a `checkpoints/` folder next to `app.py`."
         )
         st.stop()
